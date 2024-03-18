@@ -1,0 +1,53 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+}
+
+div {
+    animation: fade linear;
+    animation-timeline: view();
+}
+
+h1, header h2 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* ============== Nav =========== */
+
+
+body {
+    background-color: #bae8fbff;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 21px;
+}
+
+div.top-cloud {
+    margin-bottom: -1rem;
+}
+
+.section2 {
+    background-color: white;
+    min-height: 20rem;
+}
+.bottom-cloud {
+    margin-top: -1rem;
+}
