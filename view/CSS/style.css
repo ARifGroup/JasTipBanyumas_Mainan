@@ -142,8 +142,8 @@ div.section1 {
 .card {
     /* background-color: red; */
     border-radius: 0.7rem;
-    min-width: 220px;
-    margin: 0 2rem 0;
+    width: 220px;
+    margin: 0 2rem 2rem;
     height: fit-content;
 }
 
@@ -162,11 +162,28 @@ div.section1 {
 }
 .card h2, .card h3 {
     margin: 0.3rem;
+    font-size: 23px;
 }
 
 .card .text button {
     margin:0 auto 1rem;
     width: 100%;
+    background-color: transparent;
+    padding: 0.4rem 0;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+
+.card h3 {
+    /* background-color: blue; */
+    color: rgba(0,0,0,0.2) ;
+    font-size: 18px;
+}
+.card h3 span.ada-discount {
+    /* background-color: blue; */
+    color: rgba(0,0,0,1);
+    font-size: 21px;
 }
 
 @media screen and (max-width: 768px) {
