@@ -13,9 +13,11 @@ img {
 @keyframes fade {
     0% {
         opacity: 0;
+        /* transform: translate(50%); */
     }
     30% {
         opacity: 1;
+        /* transform: translate(0); */
     }
 }
 
@@ -24,13 +26,13 @@ div {
     animation-timeline: view();
 }
 
-h1, header h2 {
+header h1, header h2 {
     font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    padding: 0.7rem 1rem;
 }
-/* ============== Nav =========== */
-
 
 body {
     background-color: #bae8fbff;
@@ -46,8 +48,84 @@ div.top-cloud {
 
 .section2 {
     background-color: white;
-    min-height: 20rem;
+    min-height: 30rem;
+    padding-top: 5rem;
 }
 .bottom-cloud {
     margin-top: -1rem;
 }
+
+/* ============== Nav =========== */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;    
+}
+
+nav li {
+    padding: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+}
+
+/* ============================= */
+
+/* =========== Section 1 ============== */
+
+div.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-text {
+    margin-top: -3rem;
+    min-width: 30rem;
+}
+
+.header-img img{
+    width: 40vW;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    .header-img img {
+        width: 100vw;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+}
+
+/* =============================== */
+
+/* =========== Section 2 =========== */
+.top-cloud {
+    /* background-color: red; */
+    margin-top: -18vw;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/* =============================== */
