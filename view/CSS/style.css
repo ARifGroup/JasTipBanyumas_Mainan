@@ -49,8 +49,13 @@ div.top-cloud {
 .section2 {
     background-color: white;
     min-height: 30rem;
-    padding-top: 5rem;
 }
+
+.main-h2 {
+    padding: 0 2rem 0;
+}
+
+
 .bottom-cloud {
     margin-top: -1rem;
 }
@@ -127,5 +132,47 @@ div.section1 {
     z-index: -1;
 }
 
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    /* background-color: red; */
+    border-radius: 0.7rem;
+    min-width: 220px;
+    margin: 0 2rem 0;
+    height: fit-content;
+}
+
+.card .img {
+    /* background-color: blue; */
+    border-radius: 0.7rem;
+    min-width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card .text {
+    padding: 0 0.7rem 0;
+}
+.card h2, .card h3 {
+    margin: 0.3rem;
+}
+
+.card .text button {
+    margin:0 auto 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+    margin: 0 0.7rem 0;
+    }
+}
 
 /* =============================== */
