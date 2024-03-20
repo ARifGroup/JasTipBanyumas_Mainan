@@ -1,2 +1,4 @@
-*.json
+file.json
+package.json
+product.json
 index.js

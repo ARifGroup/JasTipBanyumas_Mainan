@@ -21,7 +21,7 @@ img {
     }
 }
 
-div {
+.section2 div {
     animation: fade linear;
     animation-timeline: view();
 }

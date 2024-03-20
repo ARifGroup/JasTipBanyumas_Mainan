@@ -41,9 +41,10 @@ function generate(data) {
     });
 }
 
-const data = fetch("file.json")
+const data = fetch("mainan.json")
     .then(response => response.json())
     .then(data => generate(data))
     .catch(error => console.log(error));
 
 // generate();
+
