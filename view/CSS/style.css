@@ -88,6 +88,11 @@ nav a {
     font-weight: 400;
 }
 
+@media  screen and (max-width : 720px) {
+    nav {
+        visibility: hidden;
+    }
+}
 /* ============================= */
 
 /* =========== Section 1 ============== */
