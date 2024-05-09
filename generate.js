@@ -5,6 +5,13 @@ const numbWA = "6289531427766";
 
 function generate(data) {
     data.forEach((data) => {
+        const urlWA = data.namaProduk.split(` `);
+        pesanWA = "";
+        urlWA.forEach(data => {
+            pesanWA += data+"%20";
+            console.log(pesanWA);
+        })
+
         section2.innerHTML += '';
 
         if (!data.diskon) {
@@ -20,8 +27,8 @@ function generate(data) {
                 <div class="star">
                     <img src="#" alt="Star">
                 </div>
-                <a href="https://wa.me/${numbWA}?text=Hai%20admin%2C%0ASaya%20ingin%20membeli%20${data.namaProduk}%20dengan%20harga%20Rp%20${data.hargaAsli}.%0AApakah%20barangnya%20masih%20ada%3F" target="_blank">
-                    <button>Tambah ke kranjang</button>
+                <a href="https://wa.me/${numbWA}?text=Hai%20admin%2C%0ASaya%20ingin%20membeli%20${pesanWA}dengan%20harga%20Rp%20${data.hargaAsli}.%0AApakah%20barangnya%20masih%20ada%3F" target="_blank">
+                    <button>Beli</button>
                 </a>
             </div>
         </div>
@@ -38,8 +45,8 @@ function generate(data) {
                 <div class="star">
                     <img src="#" alt="Star">
                 </div>
-                <a href="https://wa.me/${numbWA}?text=Hai%20admin%2C%0ASaya%20ingin%20membeli%20${data.namaProduk}%20dengan%20harga%20Rp%20${data.hargaDiskon}.%0AApakah%20barangnya%20masih%20ada%3F" target="_blank">
-                    <button>Tambah ke kranjang</button>
+                <a href="https://wa.me/${numbWA}?text=Hai%20admin%2C%0ASaya%20ingin%20membeli%20${pesanWA}dengan%20harga%20Rp%20${data.hargaDiskon}.%0AApakah%20barangnya%20masih%20ada%3F" target="_blank">
+                    <button>Beli</button>
                 </a>
             </div>
         </div>
