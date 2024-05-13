@@ -1,6 +1,22 @@
 const section2 = document.querySelector("#jualan");
-
 const numbWA = "6289531427766";
+const kodeMember = "AKUSUKAMIE";
+
+document.getElementById("buttonKodeMember").addEventListener("click", generateMemberPage);
+function generateMemberPage () {
+    let inputKodeMember = document.getElementById("kodeMember").value;
+    // console.log(isi);
+    // console.log(inputKodeMember);
+
+    if(inputKodeMember === kodeMember) {
+        console.log(inputKodeMember);
+        inputKodeMember = 'beda';
+        console.log(inputKodeMember);
+
+    } else {
+        alert("Kode Salah");
+    }
+};
 
 
 function generate(data) {
