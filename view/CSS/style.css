@@ -88,7 +88,7 @@ nav a {
 }
 
 @media  screen and (max-width : 720px) {
-    nav {
+    nav .logo{
         visibility: hidden;
     }
 }
