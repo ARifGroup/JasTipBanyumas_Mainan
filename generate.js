@@ -19,7 +19,6 @@ function generateMemberPage () {
 };
 
 
-
 function generate(data) {
     data.forEach((data) => {
         const urlWA = data.namaProduk.split(` `);
