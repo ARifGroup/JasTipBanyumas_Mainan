@@ -69,11 +69,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0.7rem 2rem;
+    background-color: black;
+
 }
 
 nav ul {
     display: flex;
-    list-style: none;    
+    list-style: none;   
+    align-items: center; 
 }
 
 nav li {
@@ -87,9 +90,28 @@ nav a {
     font-weight: 400;
 }
 
+nav button {
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: rgb(150, 0, 0);
+    cursor : pointer;
+}
+
 @media  screen and (max-width : 720px) {
     nav .logo{
-        visibility: hidden;
+        display: none;
+    }
+    nav {
+        justify-content: center;
     }
 }
 /* ============================= */
@@ -144,14 +166,16 @@ div.section1 {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-gap: 30px;
     align-items: stretch;
+    justify-items: center;
 }
 
 .card {
     /* background-color: red; */
     border-radius: 0.7rem;
-    width: 220px;
-    margin: 0 2rem 2rem;
+    max-width: 220px;
+    /* margin: 0 2rem 2rem; */
     height: fit-content;
+    align-self: end;
 }
 
 .card .img {

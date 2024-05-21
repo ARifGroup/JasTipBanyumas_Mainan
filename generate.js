@@ -9,9 +9,10 @@ function generateMemberPage () {
     // console.log(inputKodeMember);
 
     if(inputKodeMember === kodeMember) {
-        console.log(inputKodeMember);
-        inputKodeMember = 'beda';
-        console.log(inputKodeMember);
+        // console.log(inputKodeMember);
+        let label = document.getElementsByTagName("li")[0];
+        console.log(label);
+        label.innerHTML ="Member";
 
     } else {
         alert("Kode Salah");
